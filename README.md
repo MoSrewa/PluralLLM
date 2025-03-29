@@ -2,7 +2,7 @@
 
 # [PluralLLM: Pluralistic Alignment in LLMs via Federated Learning](https://arxiv.org/abs/2503.09925)
 
-**PluralLLM** is a Federated Learning framework for aligning Large Language Models (LLMs) with diverse human preferences in a privacy-preserving and fairness-aware manner. Built to address the limitations of centralized RLHF (Reinforcement Learning from Human Feedback), PluralLLM enables decentralized training of a transformer-based preference predictor, which can serve directly as a reward model in RLHF pipelines.
+**PluralLLM** is a Federated Learning framework for aligning Large Language Models (LLMs) with diverse human preferences in a privacy-preserving and fairness-aware manner. Built to address the preference data privacy limitations of centralized RLHF (Reinforcement Learning from Human Feedback), PluralLLM enables decentralized training of a transformer-based preference predictor, which can serve directly as a reward model in RLHF pipelines.
 
 Our method uses Federated Averaging (FedAvg) to efficiently aggregate updates from multiple clients, achieving:
 
@@ -18,7 +18,7 @@ Evaluated on a Q/A preference alignment task, PluralLLM demonstrates that federa
 Clone the repository
 
 ```
-git clone https://github.com/yourusername/PluralLLM.git
+git clone https://github.com/MoSrewa/PluralLLM.git
 ```
 Set up the Conda environment from the provided configuration file
 ```
