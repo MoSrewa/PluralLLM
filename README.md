@@ -4,8 +4,7 @@
 
 **PluralLLM** is a Federated Learning framework for aligning Large Language Models (LLMs) with diverse human preferences in a privacy-preserving and fairness-aware manner. Built to address the preference data privacy limitations of centralized RLHF (Reinforcement Learning from Human Feedback), PluralLLM enables decentralized training of a transformer-based preference predictor, which can serve directly as a reward model in RLHF pipelines.
 
-Our method uses Federated Averaging (FedAvg) to efficiently aggregate updates from multiple clients, achieving:
-
+Our approach leverages Federated Averaging (FedAvg) to efficiently aggregate preference updates from multiple decentralized clients, offering a scalable alternative to centralized [Group-Preference-Optimization (GPO)](https://github.com/jamqd/Group-Preference-Optimization). Compared to the centralized setup, it achieves:
 * ⚡ **46% faster convergence**
 
 * 🎯 **4% improvement in alignment scores**
@@ -60,11 +59,12 @@ If you find this project helpful, please cite:
 Srewa, Mahmoud, Tianyu Zhao, and Salma Elmalaki. "PluralLLM: Pluralistic Alignment in LLMs via Federated Learning." arXiv preprint arXiv:2503.09925 (2025).
 
 ##  📖 References
-This project builds upon the foundational work presented in:
+PluralLLM draws inspiration from the centralized Group-Preference-Optimization (GPO) approach, which can be found here:
 [Group-Preference-Optimization (GPO)](https://github.com/jamqd/Group-Preference-Optimization)
 
+While GPO presents a centralized learning approach for optimizing group preferences, PluralLLM introduces a different learning paradigm based on federated learning, enabling decentralized preference alignment across multiple clients. This shift allows PluralLLM to address scalability, privacy, and personalization in real-world, distributed environments.
 
-If you use PluralLLM in your work, we encourage you to also cite the original GPO repository and its authors for their foundational contributions.
+If you use PluralLLM in your work, we encourage you to acknowledge the original GPO repository and its authors alongside our contributions.
 
 
 ## 📄 License
